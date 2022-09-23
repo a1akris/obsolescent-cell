@@ -1,0 +1,18 @@
+[package]
+name = "obsolescent-cell"
+version = "0.2.1-dev"
+authors = ["Oleksandr Kryvytskyi <alkrivitskiy@pm.me>"]
+edition = "2021"
+license = "MIT AND Apache-2.0"
+description = """
+A type that represents a value that can be considered valid for
+a certain amount of time. It's mainly useful for implementing caches.
+"""
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features=["time", "sync"] }
+
+[dev-dependencies]
+tokio = { version = "1.0", features=["rt", "macros"] }
